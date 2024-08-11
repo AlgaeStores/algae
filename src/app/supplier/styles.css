@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .flex-col.md\:flex-row {
+      flex-direction: column; /* Reversed order on mobile screens */
+    }
+  
+    .md\:w-1\/2 {
+      width: 100%; /* Full width on mobile screens */
+    }
+  }
