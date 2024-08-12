@@ -29,7 +29,7 @@ export default function Home() {
           </section>
 
           <main>
-            <section className="grid grid-cols-3 justify-between mt-24 gap-0">
+            <section className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0">
               <div>
                 <img src="/seaweed1.png" />
               </div>
@@ -38,14 +38,14 @@ export default function Home() {
                   <h3 className="text-[#3498db]">WHO WE ARE</h3>
                 </div>
                 <div>
-                  <div className="text-5xl font-extralight">
+                  <div className="text-xl md:text-5xl font-extralight">
                     Cultivating a Healthier
                   </div>
-                  <div className="text-5xl font-extralight">
+                  <div className="text-xl md:text-5xl font-extralight">
                     Future with Algae
                   </div>
                 </div>
-                <div className="mt-4 font-extralight">
+                <div className="hidden md:block mt-4 font-extralight">
                   Algae & Seaweed Emporium is your one-stop shop for unlocking
                   the incredible potential of algae and seaweed. We are
                   passionate about bringing you the highest quality, sustainably
@@ -53,8 +53,18 @@ export default function Home() {
                   respect our planet.
                 </div>
               </div>
+              <div className="md:hidden mt-4 font-extralight p-2 text-[17px]">
+                  Algae & Seaweed Emporium is your one-stop shop for unlocking
+                  the incredible potential of algae and seaweed. We are
+                  passionate about bringing you the highest 
+                  
+                </div>
               <div className="flex items-center justify-end">
                 <img src="/seaweed2.png" />
+              </div>
+              <div className="md:hidden col-span-2 font-extralight pl-2 pr-2 text-[17px]">
+              quality, sustainably sourced algae and seaweed products that nourish your body and
+              respect our planet.
               </div>
             </section>
             {/* <section className="grid grid-cols-3 justify-between mt-24 gap-0 bg-[#1C2FDC]">
@@ -88,13 +98,13 @@ export default function Home() {
               <div className="text-[16px] font-[700] text-[#273CF6] flex items-center justify-center">
                 SOURCED FROM
               </div>
-              <div className="text-[48px] font-[300] text-[#000000] flex items-center justify-center">
+              <div className="text-[30px] md:text-[48px] font-[300] text-[#000000] flex items-center justify-center">
                 India's Rich Marine
               </div>
-              <div className="text-[48px] font-[300] text-[#000000] flex items-center justify-center">
+              <div className="text-[30px] md:text-[48px] font-[300] text-[#000000] flex items-center justify-center">
                 Biodiversity
               </div>
-              <div className="grid grid-cols-2 justify-between gap-0">
+              <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-0">
                 <div className="flex items-center justify-center">
                   <img src="/india.png" />
                 </div>
@@ -174,28 +184,28 @@ export default function Home() {
         </section> */}
             <section
               id="footer"
-              className="grid grid-cols-4 justify-between pt-10 pb-20 gap-0 bg-[#E2F949]"
+              className="grid grid-cols-3 md:grid-cols-4 justify-between pt-10 pb-20 gap-0 bg-[#E2F949]"
             >
               <div className="items-center justify-center">
-                <div className="mt-10 text-[20px] font-[700] text-[#252525] flex items-center justify-center">
+                <div className="mt-10 p-1 md:p-0 text-[16px] md:text-[20px] md:text-[20px] font-[700] text-[#252525] flex items-center justify-center">
                   The Algae Store
                 </div>
               </div>
-              <div></div>
+              <div className="hidden md:block"></div>
               <div>
-                <div className="mt-10 text-[18px] font-[400] text-[#252525] flex items-center">
+                <div className="mt-10 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
                   Home
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center">
+                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
                   About
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center">
+                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
                   Services
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center">
+                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
                   FAQs
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center">
+                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
                   Contact Us
                 </div>
               </div>
