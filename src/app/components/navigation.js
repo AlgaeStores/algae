@@ -13,9 +13,10 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
-  const closeMenuAndScroll = (sectionNumber) => {
+  const closeMenuAndScroll = (redirectTo) => {
+    redirectToPage(redirectTo)
     closeMenu();
-    scrollToSection(sectionNumber);
+    // scrollToSection(sectionNumber);
   };
 
   const closeMenuAndOpenCart = () => {
