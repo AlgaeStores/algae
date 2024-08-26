@@ -49,25 +49,25 @@ const MobileMenu = ({
         <nav className="mt-6">
           <ul>
             <li
-              onClick={() => closeMenuAndScroll(1)}
+              onClick={() => closeMenuAndScroll("/")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Home
             </li>
             <li
-              onClick={() => closeMenuAndScroll(2)}
+              onClick={() => closeMenuAndScroll("/supplier")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Supplier
             </li>
             <li
-              onClick={() => closeMenuAndScroll(3)}
+              onClick={() => closeMenuAndScroll("/buyer")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Buyer
             </li>
             <li
-              onClick={() => closeMenuAndScroll(4)}
+              onClick={() => closeMenuAndScroll("/")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Contact
