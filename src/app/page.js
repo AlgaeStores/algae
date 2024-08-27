@@ -48,9 +48,11 @@ export default function Home() {
       {websiteDetails && (
         <div>
           <Navigation />
-          <section class="bg-image h-96 flex items-center justify-center text-white text-center">
+          <section class="bg-image h-[590px] flex items-center justify-center text-white text-center">
             <div>
-              <h1 class="text-8xl mb-4">THE ALGAE STORE</h1>
+              <h1 class="text-[96px] font-[700] text-[#FFFFFF] mb-4">
+                THE ALGAE STORE
+              </h1>
             </div>
           </section>
 
@@ -61,17 +63,19 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <div>
-                  <h3 className="text-[#3498db]">WHO WE ARE</h3>
+                  <h3 className="text-[#273CF6] text-[16px] font-[700]">
+                    WHO WE ARE
+                  </h3>
                 </div>
                 <div>
-                  <div className="text-xl md:text-5xl font-extralight">
+                  <div className="text-[#000000] text-[48px] font-[300] font-serif">
                     Cultivating a Healthier
                   </div>
-                  <div className="text-xl md:text-5xl font-extralight">
+                  <div className="text-[#000000] text-[48px] font-[300] font-serif">
                     Future with Algae
                   </div>
                 </div>
-                <div className="hidden md:block mt-4 font-extralight">
+                <div className="hidden md:block mt-4 text-[#484848] text-[16px] font-[400]">
                   Algae & Seaweed Emporium is your one-stop shop for unlocking
                   the incredible potential of algae and seaweed. We are
                   passionate about bringing you the highest quality, sustainably
@@ -98,7 +102,7 @@ export default function Home() {
                   <div className="mt-24 md:mt-[200px] text-[30px] md:text-[48px] font-serif font-[400] text-[#FFFFFF] flex items-center justify-center">
                     Featured Products
                   </div>
-                  <div className="text-[16px] font-[500] text-[#FFFFFF] flex items-center justify-center p-10">
+                  <div className="md:ml-8 text-[16px] font-[500] text-[#FFFFFF] flex items-center justify-center p-10">
                     We source only the finest algae and seaweed products,
                     ensuring purity, potency and effectiveness.
                   </div>
@@ -262,7 +266,7 @@ export default function Home() {
             </section>
             <section className="mt-24 mb-24">
               <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-0">
-                <div className="pt-10 pl-5 md:pl-20 content-center">
+                <div className="pt-10 pl-5 md:pl-20 md:ml-10 content-center">
                   <div className="text-[30px] md:text-[48px] font-[400] text-[#000000] font-serif">
                     Enquire Here!
                   </div>
@@ -285,7 +289,7 @@ export default function Home() {
                           />
                           <label
                             for="hs-floating-underline-input-passowrd"
-                            class="absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                            class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
                                     peer-focus:scale-90
                                       peer-focus:translate-x-0.5
                                       peer-focus:-translate-y-1.5
@@ -316,7 +320,7 @@ export default function Home() {
                               />
                               <label
                                 for="hs-floating-underline-input-passowrd"
-                                class="absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                                class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
                                     peer-focus:scale-90
                                       peer-focus:translate-x-0.5
                                       peer-focus:-translate-y-1.5
@@ -338,7 +342,7 @@ export default function Home() {
                                 onChange={(e) => setMessage(e.target.value)}
                                 type="text"
                                 id="hs-floating-underline-input-passowrd"
-                                class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600
+                                class="text-[14px] font-[400] text-[#000000] peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600
                                   focus:pt-6
                                   focus:pb-2
                                   [&:not(:placeholder-shown)]:pt-6
@@ -349,7 +353,7 @@ export default function Home() {
                               />
                               <label
                                 for="hs-floating-underline-input-passowrd"
-                                class="absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                                class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
                                     peer-focus:scale-90
                                       peer-focus:translate-x-0.5
                                       peer-focus:-translate-y-1.5
@@ -369,7 +373,7 @@ export default function Home() {
                             href="#"
                             className="text-gray-900 dark:text-white hover:underline flex items-center justify-start"
                           >
-                            <p class="border border-black rounded-full px-4 py-1 text-[12px] font-serif font-[400] text-[#1C1B1F]">
+                            <p class="border border-black rounded-full px-4 py-1 text-[12px] font-serif font-[500] text-[#1C1B1F]">
                               Contact Us
                             </p>
                           </a>
@@ -378,16 +382,28 @@ export default function Home() {
                     </div>
                     <div>
                       <div className="mt-3">
-                        Contact
-                        <div>algaestores#gmail.com</div>
+                        <div className="text-[16px] font-[700] text-[#000000]">
+                          Contact
+                        </div>
+                        <div className="text-[16px] font-[400] text-[#000000]">
+                          algaestores@gmail.com
+                        </div>
                       </div>
                       <div className="mt-7">
-                        Phone
-                        <div>+91 7741944777</div>
+                        <div className="text-[16px] font-[700] text-[#000000]">
+                          Phone
+                        </div>
+                        <div className="text-[16px] font-[400] text-[#000000]">
+                          +91 7741944777
+                        </div>
                       </div>
                       <div className="mt-8">
-                        Based In
-                        <div>Maharashtra</div>
+                        <div className="text-[16px] font-[700] text-[#000000]">
+                          Based In
+                        </div>
+                        <div className="text-[16px] font-[400] text-[#000000]">
+                          Maharashtra
+                        </div>
                       </div>
                     </div>
                   </div>
