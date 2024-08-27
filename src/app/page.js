@@ -1,16 +1,21 @@
 "use client";
 import { getCookieObject } from "@/utils/loginUtils";
 import Navigation from "./components/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LANGUAGE, LANGUAGE_TYPE } from "@/constants/langConstants";
 import ActiveSlider from "./components/cutomActiveSlider";
 import { sendEmail } from "@/services/emailService";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const { language } = getCookieObject();
   const [fullName, setUserFullName] = useState(null);
   const [emailId, setEmailId] = useState(null);
   const [message, setMessage] = useState(null);
+  const aboutSection = useRef(null);
+  const productsSection = useRef(null);
+  const contactSection = useRef(null);
+  const router = useRouter();
   const [websiteDetails, setWebsiteDetails] = useState(
     LANGUAGE[LANGUAGE_TYPE.ENGLISH]
   );
@@ -26,28 +31,60 @@ export default function Home() {
   };
 
   const handleContactUsClick = () => {
-    const customMessage = `Name : ${fullName}\n Email : ${emailId}\n Message : ${message}`;
-    const payload = {
-      from_name: "Alage Store",
-      to_name: "Admin",
-      heading: "A new inquiry : ",
-      message: customMessage,
-      to_email: process.env.NEXT_PUBLIC_ADMIN_EMAIL,
-    };
-    sendEmail(payload).then((emailRes) => {
-      if (emailRes) {
-        alert(
-          "Your selling request is sent to our admin, will contact you soon."
-        );
-        router.push("/");
-      }
-    });
+    if (fullName && emailId && message) {
+      const customMessage = `Name : ${fullName}\n Email : ${emailId}\n Message : ${message}`;
+      const payload = {
+        from_name: "Alage Store",
+        to_name: "Admin",
+        heading: "A new inquiry : ",
+        message: customMessage,
+        to_email: process.env.NEXT_PUBLIC_ADMIN_EMAIL,
+      };
+      sendEmail(payload).then((emailRes) => {
+        if (emailRes) {
+          alert(
+            "Your selling request is sent to our admin, will contact you soon."
+          );
+          router.push("/");
+        }
+      });
+    } else {
+      alert("Provide all the information mentioned");
+    }
   };
+
+  const scrollToSection = (num) => {
+    switch (num) {
+      case 1:
+        window.scrollTo({
+          top: aboutSection.current.offsetTop,
+          behavior: "smooth",
+        });
+        break;
+      case 2:
+        window.scrollTo({
+          top: productsSection.current.offsetTop - 120,
+          behavior: "smooth",
+        });
+        break;
+      case 3:
+        window.scrollTo({
+          top: contactSection.current.offsetTop - 120,
+          behavior: "smooth",
+        });
+        break;
+    }
+  };
+
+  const redirectToPage = (redirectTo) => {
+    router.push(redirectTo);
+  };
+
   return (
     <>
       {websiteDetails && (
         <div>
-          <Navigation />
+          <Navigation scrollToSection={scrollToSection} />
           <section class="bg-image h-[590px] flex items-center justify-center text-white text-center">
             <div>
               <h1 class="text-[96px] font-[700] text-[#FFFFFF] mb-4">
@@ -57,7 +94,10 @@ export default function Home() {
           </section>
 
           <main>
-            <section className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24">
+            <section
+              ref={aboutSection}
+              className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
+            >
               <div>
                 <img src="/seaweed1.png" />
               </div>
@@ -67,20 +107,30 @@ export default function Home() {
                     WHO WE ARE
                   </h3>
                 </div>
-                <div>
+                {/* <div>
                   <div className="text-[#000000] text-[48px] font-[300] font-serif">
                     Cultivating a Healthier
                   </div>
                   <div className="text-[#000000] text-[48px] font-[300] font-serif">
                     Future with Algae
                   </div>
+                </div> */}
+                <div className="hidden md:block mt-4 text-[#484848] text-[16px] font-[400]">
+                  The Algae Store is a dedicated single-vendor marketplace
+                  designed for stakeholders across theSeaweed value chain, The
+                  platform lists products which include raw materials, processed
+                  ingredients and finished products. We simplify the procurement
+                  process in the heavily fragmented and unorganized seaweed
+                  market.
                 </div>
                 <div className="hidden md:block mt-4 text-[#484848] text-[16px] font-[400]">
-                  Algae & Seaweed Emporium is your one-stop shop for unlocking
-                  the incredible potential of algae and seaweed. We are
-                  passionate about bringing you the highest quality, sustainably
-                  sourced algae and seaweed products that nourish your body and
-                  respect our planet.
+                  Algae Store brings together a global network of stakeholders
+                  working across the seaweed value chain.We are India’s first
+                  platform working towards improving market access for buyers
+                  and sellers of seaweed and seaweed-based products. We help
+                  companies procure seaweed-based ingredients for a varied range
+                  of applications ranging across industries such as food,
+                  pharmacy, cosmetics, chemicals, agriculture etc.
                 </div>
               </div>
               <div className="md:hidden mt-4 font-extralight p-2 text-[17px]">
@@ -96,7 +146,7 @@ export default function Home() {
                 nourish your body and respect our planet.
               </div>
             </section>
-            <section>
+            <section ref={productsSection}>
               <div className="grid grid-cols-1 md:grid-cols-3 bg-[#1C2FDC]">
                 <div className="col-span-1">
                   <div className="mt-24 md:mt-[200px] text-[30px] md:text-[48px] font-serif font-[400] text-[#FFFFFF] flex items-center justify-center">
@@ -264,7 +314,7 @@ export default function Home() {
                 </div>
               </div>
             </section>
-            <section className="mt-24 mb-24">
+            <section ref={contactSection} className="mt-24 mb-24">
               <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-0">
                 <div className="pt-10 pl-5 md:pl-20 md:ml-10 content-center">
                   <div className="text-[30px] md:text-[48px] font-[400] text-[#000000] font-serif">
@@ -394,7 +444,7 @@ export default function Home() {
                           Phone
                         </div>
                         <div className="text-[16px] font-[400] text-[#000000]">
-                          +91 7741944777
+                          +91 7741933777
                         </div>
                       </div>
                       <div className="mt-8">
@@ -424,20 +474,41 @@ export default function Home() {
               </div>
               <div className="hidden md:block"></div>
               <div>
-                <div className="mt-10 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
+                <div
+                  onClick={() => scrollToSection(1)}
+                  className="mt-10 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal cursor-pointer"
+                >
                   Home
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
-                  About
+                <div
+                  onClick={() => scrollToSection(2)}
+                  className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal cursor-pointer"
+                >
+                  Proucts
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
+                <div
+                  onClick={() => redirectToPage("/services")}
+                  className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal cursor-pointer"
+                >
                   Services
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
-                  FAQs
+                <div
+                  onClick={() => redirectToPage("/supplier")}
+                  className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal cursor-pointer"
+                >
+                  Supplier
                 </div>
-                <div className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal">
-                  Contact Us
+                <div
+                  onClick={() => redirectToPage("/buyer")}
+                  className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal cursor-pointer"
+                >
+                  Buyer
+                </div>
+                <div
+                  onClick={() => scrollToSection(3)}
+                  className="mt-5 text-[18px] font-[400] text-[#252525] flex items-center justify-center md:justify-normal cursor-pointer"
+                >
+                  Enquire Here
                 </div>
               </div>
               <div>
@@ -451,7 +522,7 @@ export default function Home() {
                   Maharashtra, India
                 </div>
                 <div className="mt-2 text-[16px] font-[400] text-[#252525] flex items-center">
-                  +91-7741944777
+                  +91-7741933777
                 </div>
               </div>
             </section>

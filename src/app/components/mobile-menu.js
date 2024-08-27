@@ -7,6 +7,7 @@ const MobileMenu = ({
   onClose,
   closeMenuAndScroll,
   closeMenuAndOpenCart,
+  scrollToSection,
 }) => {
   return (
     <Fragment>
@@ -49,31 +50,43 @@ const MobileMenu = ({
         <nav className="mt-6">
           <ul>
             <li
-              onClick={() => closeMenuAndScroll("/")}
+              onClick={() => closeMenuAndScroll(1, null)}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Home
             </li>
             <li
-              onClick={() => closeMenuAndScroll("/supplier")}
+              onClick={() => closeMenuAndScroll(2, null)}
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+            >
+              Products
+            </li>
+            <li
+              onClick={() => closeMenuAndScroll(null, "/services")}
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+            >
+              Services
+            </li>
+            <li
+              onClick={() => closeMenuAndScroll(null, "/supplier")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Supplier
             </li>
             <li
-              onClick={() => closeMenuAndScroll("/buyer")}
+              onClick={() => closeMenuAndScroll(null, "/buyer")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Buyer
             </li>
-            <li
+            {/* <li
               onClick={() => closeMenuAndScroll("/")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               Contact
-            </li>
+            </li> */}
             <li
-              onClick={() => closeMenuAndScroll(4)}
+              onClick={() => closeMenuAndScroll(3, null)}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
             >
               <a
