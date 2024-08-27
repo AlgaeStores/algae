@@ -36,7 +36,7 @@ const Navigation = () => {
             <div className="col-span-2">
               <a
                 href="#"
-                class="text-gray-900 dark:text-white hover:underline text-xl"
+                class="text-gray-900 dark:text-white hover:underline text-[20px] font-[700] text-[#252525]"
                 aria-current="page"
               >
                 THE ALGAE STORE
@@ -45,7 +45,7 @@ const Navigation = () => {
             <div onClick={() => redirectToPage("/supplier")}>
               <a
                 href="#"
-                class="text-gray-900 dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
               >
                 SUPPLIER
               </a>
@@ -53,7 +53,7 @@ const Navigation = () => {
             <div onClick={() => redirectToPage("/buyer")}>
               <a
                 href="#"
-                class="text-gray-900 dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
               >
                 BUYER
               </a>
@@ -61,7 +61,7 @@ const Navigation = () => {
             <div>
               <a
                 href="#"
-                class="text-gray-900 dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
               >
                 CONTACT
               </a>
@@ -69,7 +69,7 @@ const Navigation = () => {
             <div className="col-span-7">
               <a
                 href="#"
-                className="text-gray-900 dark:text-white hover:underline flex items-center justify-end"
+                className="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-end"
               >
                 <p class="border border-black rounded-full px-4 py-1">
                   ENQUIRY TODAY
