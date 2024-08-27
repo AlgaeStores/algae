@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import MobileMenu from "./mobile-menu";
-const Navigation = () => {
+const Navigation = ({scrollToSection}) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,10 +13,13 @@ const Navigation = () => {
     setIsMenuOpen(false);
   };
 
-  const closeMenuAndScroll = (redirectTo) => {
-    redirectToPage(redirectTo)
+  const closeMenuAndScroll = (scrollTo, redirectTo) => {
+    if(scrollTo){
+      scrollToSection(scrollTo)
+    }else{
+      redirectToPage(redirectTo)
+    }
     closeMenu();
-    // scrollToSection(sectionNumber);
   };
 
   const closeMenuAndOpenCart = () => {
@@ -33,13 +36,29 @@ const Navigation = () => {
       <nav class="bg-gray-50 dark:bg-gray-700">
         <div class="hidden md:block max-w-screen-xl px-4 py-3 mx-auto">
           <div class="grid grid-cols-12 items-center">
-            <div className="col-span-2">
+            <div className="col-span-2" onClick={()=>scrollToSection(1)}>
               <a
                 href="#"
                 class="text-gray-900 dark:text-white hover:underline text-[20px] font-[700] text-[#252525]"
                 aria-current="page"
               >
                 THE ALGAE STORE
+              </a>
+            </div>
+            <div onClick={()=>scrollToSection(2)}>
+              <a
+                href="#"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
+              >
+                PRODUCTS
+              </a>
+            </div>
+            <div onClick={() => redirectToPage("/services")}>
+              <a
+                href="#"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
+              >
+                SERVICES
               </a>
             </div>
             <div onClick={() => redirectToPage("/supplier")}>
@@ -58,15 +77,15 @@ const Navigation = () => {
                 BUYER
               </a>
             </div>
-            <div>
+            {/* <div onClick={()=>scrollToSection(3)}>
               <a
                 href="#"
                 class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
               >
                 CONTACT
               </a>
-            </div>
-            <div className="col-span-7">
+            </div> */}
+            <div onClick={()=>scrollToSection(3)} className="col-span-6">
               <a
                 href="#"
                 className="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-end"
@@ -108,6 +127,7 @@ const Navigation = () => {
         onClose={closeMenu}
         closeMenuAndScroll={closeMenuAndScroll}
         closeMenuAndOpenCart={closeMenuAndOpenCart}
+        scrollToSection={scrollToSection}
       />
     </>
   );

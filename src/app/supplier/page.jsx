@@ -54,7 +54,7 @@ const page = () => {
     <>
       {!isLoading && (
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/2 bg-violet-200">
+          <div className="md:w-1/2 bg-[#E2F949]">
             <div className="p-6 md:p-20">
               <h1 className="text-3xl font-semibold text-gray-800 mb-4 md:mb-10 pl-6">
                 {languageObject.forSuppliers}
@@ -86,10 +86,6 @@ const page = () => {
                     {languageObject.noUpfrontCost}
                   </h1>
                 </div>
-              </div>
-              <div className="text-center">
-                {/* Image */}
-                <img src={'/bg356.png'} alt="img" className="mx-auto mb-0" width={100} height={100}/>
               </div>
             </div>
           </div>
@@ -231,7 +227,7 @@ const page = () => {
                   <button
                     onClick={handleSubmit}
                     type="button"
-                    className="w-full py-3 px-4 bg-violet-500 text-white rounded hover:bg-violet-600"
+                    className="w-full py-3 px-4 bg-[#E2F949] text-[#000000] rounded hover:bg-[#1C2FDC]"
                   >
                     {languageObject.send}
                   </button>
