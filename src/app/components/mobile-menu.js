@@ -13,7 +13,7 @@ const MobileMenu = ({
     <Fragment>
       {/* Background overlay */}
       <div
-        className={`fixed inset-0 bg-black opacity-50 z-50 ${
+        className={`fixed inset-0 bg-black opacity-50 z-50 bg-gray-50 dark:bg-gray-700 ${
           isOpen ? "block" : "hidden"
         }`}
         onClick={onClose}
