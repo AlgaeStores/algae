@@ -33,13 +33,13 @@ const Navigation = ({scrollToSection}) => {
 
   return (
     <>
-      <nav class="bg-gray-50 dark:bg-gray-700">
+      <nav class="bg-gray-50">
         <div class="hidden md:block max-w-screen-xl px-4 py-3 mx-auto">
           <div class="grid grid-cols-12 items-center">
             <div className="col-span-2" onClick={()=>scrollToSection(1)}>
               <a
                 href="#"
-                class="text-gray-900 dark:text-white hover:underline text-[20px] font-[700] text-[#252525]"
+                class="text-gray-900 hover:underline text-[20px] font-[700] text-[#252525]"
                 aria-current="page"
               >
                 THE ALGAE STORE
@@ -48,7 +48,7 @@ const Navigation = ({scrollToSection}) => {
             <div onClick={()=>scrollToSection(2)}>
               <a
                 href="#"
-                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] hover:underline flex items-center justify-center"
               >
                 PRODUCTS
               </a>
@@ -56,7 +56,7 @@ const Navigation = ({scrollToSection}) => {
             <div onClick={() => redirectToPage("/services")}>
               <a
                 href="#"
-                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] hover:underline flex items-center justify-center"
               >
                 SERVICES
               </a>
@@ -64,7 +64,7 @@ const Navigation = ({scrollToSection}) => {
             <div onClick={() => redirectToPage("/supplier")}>
               <a
                 href="#"
-                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] hover:underline flex items-center justify-center"
               >
                 SUPPLIER
               </a>
@@ -72,7 +72,7 @@ const Navigation = ({scrollToSection}) => {
             <div onClick={() => redirectToPage("/buyer")}>
               <a
                 href="#"
-                class="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-center"
+                class="text-gray-900 text-[14px] font-[500] text-[#252525] hover:underline flex items-center justify-center"
               >
                 BUYER
               </a>
@@ -88,7 +88,7 @@ const Navigation = ({scrollToSection}) => {
             <div onClick={()=>scrollToSection(3)} className="col-span-6">
               <a
                 href="#"
-                className="text-gray-900 text-[14px] font-[500] text-[#252525] dark:text-white hover:underline flex items-center justify-end"
+                className="text-gray-900 text-[14px] font-[500] text-[#252525] hover:underline flex items-center justify-end"
               >
                 <p class="border border-black rounded-full px-4 py-1">
                   ENQUIRY TODAY
@@ -100,7 +100,7 @@ const Navigation = ({scrollToSection}) => {
       </nav>
       <div class="md:hidden grid grid-cols-2 items-center p-5">
         <div>THE ALGAE STORE</div>
-        <div className="text-gray-900 dark:text-white hover:underline flex items-center justify-end">
+        <div className="text-gray-900 hover:underline flex items-center justify-end">
           <button
             onClick={toggleMenu}
             className="text-xl focus:outline-none lg:hidden"
