@@ -26,7 +26,7 @@ const MobileMenu = ({
         }`}
       >
         <div className="flex justify-between items-center px-4 py-2 border-b">
-          <span className="text-xl font-bold">Menu</span>
+          <span className="text-xl font-bold text-[#000000]">Menu</span>
           <button
             onClick={onClose}
             className="text-gray-600 focus:outline-none"
@@ -51,31 +51,31 @@ const MobileMenu = ({
           <ul>
             <li
               onClick={() => closeMenuAndScroll(1, null)}
-              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer text-[#000000]"
             >
               Home
             </li>
             <li
               onClick={() => closeMenuAndScroll(2, null)}
-              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer text-[#000000]"
             >
               Products
             </li>
             <li
               onClick={() => closeMenuAndScroll(null, "/services")}
-              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer text-[#000000]"
             >
               Services
             </li>
             <li
               onClick={() => closeMenuAndScroll(null, "/supplier")}
-              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer text-[#000000]"
             >
               Supplier
             </li>
             <li
               onClick={() => closeMenuAndScroll(null, "/buyer")}
-              className="py-2 px-4 hover:bg-gray-100 cursor-pointer"
+              className="py-2 px-4 hover:bg-gray-100 cursor-pointer text-[#000000]"
             >
               Buyer
             </li>
@@ -93,7 +93,7 @@ const MobileMenu = ({
                 href="#"
                 className="text-gray-900 dark:text-white hover:underline"
               >
-                <p class="border border-black rounded-full px-4 py-1">
+                <p class="border border-black rounded-full px-4 py-1 text-[#000000]">
                   ENQUIRY TODAY
                 </p>
               </a>
