@@ -13,7 +13,7 @@ const MobileMenu = ({
     <Fragment>
       {/* Background overlay */}
       <div
-        className={`fixed inset-0 bg-black opacity-50 z-50 bg-gray-50 dark:bg-gray-700 ${
+        className={`fixed inset-0 bg-black opacity-50 z-50 bg-gray-50${
           isOpen ? "block" : "hidden"
         }`}
         onClick={onClose}
@@ -91,7 +91,7 @@ const MobileMenu = ({
             >
               <a
                 href="#"
-                className="text-gray-900 dark:text-white hover:underline"
+                className="text-gray-900 hover:underline"
               >
                 <p class="border border-black rounded-full px-4 py-1 text-[#000000]">
                   ENQUIRY TODAY

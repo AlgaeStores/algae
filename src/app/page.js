@@ -328,7 +328,7 @@ export default function Home() {
                             onChange={(e) => setUserFullName(e.target.value)}
                             type="text"
                             id="hs-floating-underline-input-passowrd"
-                            class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600
+                            class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none
                                   focus:pt-6
                                   focus:pb-2
                                   [&:not(:placeholder-shown)]:pt-6
@@ -339,15 +339,15 @@ export default function Home() {
                           />
                           <label
                             for="hs-floating-underline-input-passowrd"
-                            class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                            class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] peer-disabled:opacity-50 peer-disabled:pointer-events-none
                                     peer-focus:scale-90
                                       peer-focus:translate-x-0.5
                                       peer-focus:-translate-y-1.5
-                                      peer-focus:text-gray-500 dark:peer-focus:text-neutral-500
+                                      peer-focus:text-gray-500
                                       peer-[:not(:placeholder-shown)]:scale-90
                                       peer-[:not(:placeholder-shown)]:translate-x-0.5
                                       peer-[:not(:placeholder-shown)]:-translate-y-1.5
-                                      peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500"
+                                      peer-[:not(:placeholder-shown)]:text-gray-500"
                           >
                             Full Name
                           </label>
@@ -359,7 +359,7 @@ export default function Home() {
                                 onChange={(e) => setEmailId(e.target.value)}
                                 type="text"
                                 id="hs-floating-underline-input-passowrd"
-                                class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600
+                                class="peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none
                                   focus:pt-6
                                   focus:pb-2
                                   [&:not(:placeholder-shown)]:pt-6
@@ -370,15 +370,15 @@ export default function Home() {
                               />
                               <label
                                 for="hs-floating-underline-input-passowrd"
-                                class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                                class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] peer-disabled:opacity-50 peer-disabled:pointer-events-none
                                     peer-focus:scale-90
                                       peer-focus:translate-x-0.5
                                       peer-focus:-translate-y-1.5
-                                      peer-focus:text-gray-500 dark:peer-focus:text-neutral-500
+                                      peer-focus:text-gray-500
                                       peer-[:not(:placeholder-shown)]:scale-90
                                       peer-[:not(:placeholder-shown)]:translate-x-0.5
                                       peer-[:not(:placeholder-shown)]:-translate-y-1.5
-                                      peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500"
+                                      peer-[:not(:placeholder-shown)]:text-gray-500"
                               >
                                 E-Mail
                               </label>
@@ -392,7 +392,7 @@ export default function Home() {
                                 onChange={(e) => setMessage(e.target.value)}
                                 type="text"
                                 id="hs-floating-underline-input-passowrd"
-                                class="text-[14px] font-[400] text-[#000000] peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none dark:border-b-neutral-700 dark:text-neutral-400 dark:focus:ring-neutral-600 dark:focus:border-b-neutral-600
+                                class="text-[14px] font-[400] text-[#000000] peer py-4 px-0 block w-full bg-transparent border-t-transparent border-b-2 border-x-transparent border-b-gray-200 text-sm placeholder:text-transparent focus:border-t-transparent focus:border-x-transparent focus:border-b-blue-500 focus:ring-0 disabled:opacity-50 disabled:pointer-events-none
                                   focus:pt-6
                                   focus:pb-2
                                   [&:not(:placeholder-shown)]:pt-6
@@ -403,15 +403,15 @@ export default function Home() {
                               />
                               <label
                                 for="hs-floating-underline-input-passowrd"
-                                class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] dark:text-white peer-disabled:opacity-50 peer-disabled:pointer-events-none
+                                class="text-[14px] font-[400] text-[#000000] absolute top-0 start-0 py-4 px-0 h-full text-sm truncate pointer-events-none transition ease-in-out duration-100 border border-transparent  origin-[0_0] peer-disabled:opacity-50 peer-disabled:pointer-events-none
                                     peer-focus:scale-90
                                       peer-focus:translate-x-0.5
                                       peer-focus:-translate-y-1.5
-                                      peer-focus:text-gray-500 dark:peer-focus:text-neutral-500
+                                      peer-focus:text-gray-500
                                       peer-[:not(:placeholder-shown)]:scale-90
                                       peer-[:not(:placeholder-shown)]:translate-x-0.5
                                       peer-[:not(:placeholder-shown)]:-translate-y-1.5
-                                      peer-[:not(:placeholder-shown)]:text-gray-500 dark:peer-[:not(:placeholder-shown)]:text-neutral-500 dark:text-neutral-500"
+                                      peer-[:not(:placeholder-shown)]:text-gray-500"
                               >
                                 Message
                               </label>
@@ -421,7 +421,7 @@ export default function Home() {
                         <div onClick={handleContactUsClick}>
                           <a
                             href="#"
-                            className="text-gray-900 dark:text-white hover:underline flex items-center justify-start"
+                            className="text-gray-900 hover:underline flex items-center justify-start"
                           >
                             <p class="border border-black rounded-full px-4 py-1 text-[12px] font-serif font-[500] text-[#1C1B1F]">
                               Contact Us
