@@ -33,7 +33,7 @@ const Navigation = ({scrollToSection}) => {
 
   return (
     <>
-      <nav class="bg-gray-50 dark:bg-gray-700">
+      <nav class="bg-gray-50 bg-gray-700">
         <div class="hidden md:block max-w-screen-xl px-4 py-3 mx-auto">
           <div class="grid grid-cols-12 items-center">
             <div className="col-span-2" onClick={()=>scrollToSection(1)}>
