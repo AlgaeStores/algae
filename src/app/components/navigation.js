@@ -99,11 +99,11 @@ const Navigation = ({scrollToSection}) => {
         </div>
       </nav>
       <div class="bg-gray-50 dark:bg-gray-50 md:hidden grid grid-cols-2 items-center p-5">
-        <div>THE ALGAE STORE</div>
+        <div className="text-gray-900">THE ALGAE STORE</div>
         <div className="hover:underline flex items-center justify-end">
           <button
             onClick={toggleMenu}
-            className="text-xl focus:outline-none lg:hidden"
+            className="text-xl text-gray-900 focus:outline-none lg:hidden"
           >
             <svg
               className="h-6 w-6"
