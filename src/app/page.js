@@ -98,8 +98,8 @@ export default function Home() {
               ref={aboutSection}
               className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
             >
-              <div>
-                <img src="/seaweed1.png" />
+              <div className="p-4">
+                <img src="/algae_04.jpg" />
               </div>
               <div className="text-center">
                 <div>
@@ -116,21 +116,16 @@ export default function Home() {
                   </div>
                 </div> */}
                 <div className="hidden md:block mt-4 text-[#484848] text-[16px] font-[400]">
-                  The Algae Store is a dedicated single-vendor marketplace
-                  designed for stakeholders across theSeaweed value chain, The
-                  platform lists products which include raw materials, processed
-                  ingredients and finished products. We simplify the procurement
-                  process in the heavily fragmented and unorganized seaweed
-                  market.
+                  The Algae Store is India’s first dedicated marketplace for
+                  seaweed, linking global buyers and sellers across the value
+                  chain. We provide raw materials, processed ingredients, and
+                  finished products, simplifying procurement in the fragmented
+                  seaweed market.
                 </div>
                 <div className="hidden md:block mt-4 text-[#484848] text-[16px] font-[400]">
-                  Algae Store brings together a global network of stakeholders
-                  working across the seaweed value chain.We are India’s first
-                  platform working towards improving market access for buyers
-                  and sellers of seaweed and seaweed-based products. We help
-                  companies procure seaweed-based ingredients for a varied range
-                  of applications ranging across industries such as food,
-                  pharmacy, cosmetics, chemicals, agriculture etc.
+                  Our solution serves industries and applications across diverse
+                  sectors such as food, pharmaceuticals, cosmetics, material
+                  science, and agriculture.
                 </div>
               </div>
               <div className="md:hidden mt-4 font-extralight p-2 text-[17px]">
@@ -138,8 +133,8 @@ export default function Home() {
                 incredible potential of algae and seaweed. We are passionate
                 about bringing you the highest
               </div>
-              <div className="flex items-center justify-end">
-                <img src="/seaweed2.png" />
+              <div className="flex items-center justify-end p-4">
+                <img src="/algae_05.jpg" />
               </div>
               <div className="md:hidden col-span-2 font-extralight pl-2 pr-2 text-[17px]">
                 quality, sustainably sourced algae and seaweed products that
