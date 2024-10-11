@@ -94,12 +94,12 @@ export default function Home() {
           </section>
 
           <main>
-            <section
+          <section
               ref={aboutSection}
               className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
             >
-              <div className="p-4">
-                <img src="/algae_04.jpg" />
+              <div>
+                <img src="/seaweed1.png" />
               </div>
               <div className="text-center">
                 <div>
@@ -133,8 +133,8 @@ export default function Home() {
                 incredible potential of algae and seaweed. We are passionate
                 about bringing you the highest
               </div>
-              <div className="flex items-center justify-end p-4">
-                <img src="/algae_05.jpg" />
+              <div className="flex items-center justify-end">
+                <img src="/seaweed2.png" />
               </div>
               <div className="md:hidden col-span-2 font-extralight pl-2 pr-2 text-[17px]">
                 quality, sustainably sourced algae and seaweed products that
