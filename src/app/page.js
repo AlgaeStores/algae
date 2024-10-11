@@ -94,7 +94,7 @@ export default function Home() {
           </section>
 
           <main>
-          <section
+            <section
               ref={aboutSection}
               className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
             >
@@ -129,16 +129,19 @@ export default function Home() {
                 </div>
               </div>
               <div className="md:hidden mt-4 font-extralight p-2 text-[17px]">
-                Algae & Seaweed Emporium is your one-stop shop for unlocking the
-                incredible potential of algae and seaweed. We are passionate
-                about bringing you the highest
+                The Algae Store is India’s first dedicated marketplace for
+                seaweed, linking global buyers and sellers across the value
+                chain. We provide raw materials, processed ingredients, and
+                finished products, simplifying procurement in the fragmented
+                seaweed market.
               </div>
               <div className="flex items-center justify-end">
                 <img src="/seaweed2.png" />
               </div>
               <div className="md:hidden col-span-2 font-extralight pl-2 pr-2 text-[17px]">
-                quality, sustainably sourced algae and seaweed products that
-                nourish your body and respect our planet.
+                Our solution serves industries and applications across diverse
+                sectors such as food, pharmaceuticals, cosmetics, material
+                science, and agriculture.
               </div>
             </section>
             <section ref={productsSection}>
@@ -264,8 +267,8 @@ export default function Home() {
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
                       Supporting Local Communities:{" "}
                       <span className="font-[300]">
-                        We work closely with coastel communities providing access to
-                        larger markets, for selling their products.
+                        We work closely with coastel communities providing
+                        access to larger markets, for selling their products.
                       </span>
                     </div>
                   </div>
@@ -286,7 +289,8 @@ export default function Home() {
                       Tapping global markets:{" "}
                       <span className="font-[300]">
                         We enable sourcing seaweed and seaweed based products
-                        from verified suppliers across South East Asian countries.
+                        from verified suppliers across South East Asian
+                        countries.
                       </span>
                     </div>
                   </div>
