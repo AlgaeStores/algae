@@ -94,12 +94,12 @@ export default function Home() {
           </section>
 
           <main>
-            <section
+          <section
               ref={aboutSection}
               className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
             >
-              <div className="p-4">
-                <img src="/algae_04.jpg" />
+              <div>
+                <img src="/seaweed1.png" />
               </div>
               <div className="text-center">
                 <div>
@@ -133,8 +133,8 @@ export default function Home() {
                 incredible potential of algae and seaweed. We are passionate
                 about bringing you the highest
               </div>
-              <div className="flex items-center justify-end p-4">
-                <img src="/algae_05.jpg" />
+              <div className="flex items-center justify-end">
+                <img src="/seaweed2.png" />
               </div>
               <div className="md:hidden col-span-2 font-extralight pl-2 pr-2 text-[17px]">
                 quality, sustainably sourced algae and seaweed products that
@@ -264,29 +264,29 @@ export default function Home() {
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
                       Supporting Local Communities:{" "}
                       <span className="font-[300]">
-                        We believe in empowering Indian seaweed farmers and
-                        contributing to the local economy.
+                        We work closely with coastel communities providing access to
+                        larger markets, for selling their products.
                       </span>
                     </div>
                   </div>
                   <div className="mt-10">
                     <img src="/Group2.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
-                      Responsible Harvesting:{" "}
+                      Meeting industry benchmarks:{" "}
                       <span className="font-[300]">
-                        We advocate for sustainable practices that ensure the
-                        long-term health of our oceans.
+                        We help suppliers in standardising thier products
+                        according to the industry benchmark through several
+                        interventions.
                       </span>
                     </div>
                   </div>
                   <div className="mt-10">
                     <img src="/Vector.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
-                      Supporting Local Communities:{" "}
+                      Tapping global markets:{" "}
                       <span className="font-[300]">
-                        We appreciate and respect the rich diversity of algae
-                        and seaweed found along India's coastline, and strive to
-                        promote its sustainable use.
+                        We enable sourcing seaweed and seaweed based products
+                        from verified suppliers across South East Asian countries.
                       </span>
                     </div>
                   </div>
