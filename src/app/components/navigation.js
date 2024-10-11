@@ -45,7 +45,7 @@ const Navigation = ({scrollToSection}) => {
                 THE ALGAE STORE
               </a>
             </div>
-            <div onClick={()=>scrollToSection(2)}>
+            <div onClick={() =>  window.open("/Algae_Store_Products.pdf", "_blank")}>
               <a
                 href="#"
                 class="text-gray-900 text-[14px] font-[500] text-[#252525] hover:underline flex items-center justify-center"

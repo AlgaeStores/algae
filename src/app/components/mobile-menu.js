@@ -56,7 +56,7 @@ const MobileMenu = ({
               Home
             </li>
             <li
-              onClick={() => closeMenuAndScroll(2, null)}
+              onClick={() =>  window.open("/Algae_Store_Products.pdf", "_blank")}
               className="py-2 px-4 hover:bg-gray-100 cursor-pointer text-[#000000]"
             >
               Products

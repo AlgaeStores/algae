@@ -264,29 +264,29 @@ export default function Home() {
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
                       Supporting Local Communities:{" "}
                       <span className="font-[300]">
-                        We believe in empowering Indian seaweed farmers and
-                        contributing to the local economy.
+                        We work closely with coastel communities providing access to
+                        larger markets, for selling their products.
                       </span>
                     </div>
                   </div>
                   <div className="mt-10">
                     <img src="/Group2.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
-                      Responsible Harvesting:{" "}
+                      Meeting industry benchmarks:{" "}
                       <span className="font-[300]">
-                        We advocate for sustainable practices that ensure the
-                        long-term health of our oceans.
+                        We help suppliers in standardising thier products
+                        according to the industry benchmark through several
+                        interventions.
                       </span>
                     </div>
                   </div>
                   <div className="mt-10">
                     <img src="/Vector.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
-                      Supporting Local Communities:{" "}
+                      Tapping global markets:{" "}
                       <span className="font-[300]">
-                        We appreciate and respect the rich diversity of algae
-                        and seaweed found along India's coastline, and strive to
-                        promote its sustainable use.
+                        We enable sourcing seaweed and seaweed based products
+                        from verified suppliers across South East Asian countries.
                       </span>
                     </div>
                   </div>
