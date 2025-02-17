@@ -87,7 +87,7 @@ export default function Home() {
           <Navigation scrollToSection={scrollToSection} />
           <section class="bg-image h-[590px] flex items-center justify-center text-white text-center">
             <div>
-              <h1 class="text-[96px] font-[700] text-[#FFFFFF] mb-4">
+              <h1 class="text-[72px] md:text-[96px] font-[700] text-[#FFFFFF] mb-4">
                 THE ALGAE STORE
               </h1>
             </div>
@@ -96,7 +96,7 @@ export default function Home() {
           <main>
             <section
               ref={aboutSection}
-              className="grid grid-cols-2 md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
+              className="hidden md:grid md:grid-cols-3 justify-between mt-24 gap-0 mb-24"
             >
               <div>
                 <img src="/seaweed1.png" />
@@ -107,14 +107,6 @@ export default function Home() {
                     WHO WE ARE
                   </h3>
                 </div>
-                {/* <div>
-                  <div className="text-[#000000] text-[48px] font-[300] font-serif">
-                    Cultivating a Healthier
-                  </div>
-                  <div className="text-[#000000] text-[48px] font-[300] font-serif">
-                    Future with Algae
-                  </div>
-                </div> */}
                 <div className="hidden md:block mt-4 text-[#484848] text-[16px] font-[400]">
                   The Algae Store is India’s first dedicated marketplace for
                   seaweed, linking global buyers and sellers across the value
@@ -128,20 +120,42 @@ export default function Home() {
                   science, and agriculture.
                 </div>
               </div>
-              <div className="md:hidden mt-4 font-extralight p-2 text-[17px]">
-                The Algae Store is India’s first dedicated marketplace for
-                seaweed, linking global buyers and sellers across the value
-                chain. We provide raw materials, processed ingredients, and
-                finished products, simplifying procurement in the fragmented
-                seaweed market.
-              </div>
               <div className="flex items-center justify-end">
                 <img src="/seaweed2.png" />
               </div>
-              <div className="md:hidden col-span-2 font-extralight pl-2 pr-2 text-[17px]">
-                Our solution serves industries and applications across diverse
-                sectors such as food, pharmaceuticals, cosmetics, material
-                science, and agriculture.
+            </section>
+            <section
+              ref={aboutSection}
+              className="md:hidden md:grid mt-24 gap-0 mb-24"
+            >
+              <div className="place-items-center">
+                <img src="/seaweed_mobile.png" />
+              </div>
+              <div className="text-center">
+                <div className="mt-10">
+                  <h3 className="text-[#273CF6] text-[12px] font-[700]">
+                    WHO WE ARE
+                  </h3>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="mt-2 ml-8 mr-8">
+                  <h3 className="text-[#000000] text-[24px] font-[300]">
+                    Cultivating a Healthier Future with Algae
+                  </h3>
+                </div>
+              </div>
+              <div className="md:hidden text=[#484848] mt-4 ml-8 mr-8 font-[400] p-2 text-[12px] text-center">
+                Algae & Seaweed Emporium is your one-stop shop for unlocking the
+                incredible potential of algae and seaweed.
+              </div>
+              <div className="md:hidden text=[#484848] ml-8 mr-8 font-[400] p-2 text-[12px] text-center">
+                We are passionate about bringing you the highest quality,
+                sustainably sourced algae and seaweed products that nourish your
+                body and respect our planet.
+              </div>
+              <div className="place-items-center">
+                <img src="/seaweed_lab_mobile.png" />
               </div>
             </section>
             <section ref={productsSection}>
@@ -173,7 +187,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-0">
                 <div className="flex items-center justify-center">
                   {/* <img src="/india.png" /> */}
-                  <img src="/india.png" usemap="#image-map" />
+                  <img src="/india_blue.png" usemap="#image-map" />
 
                   <map className="invisible md:visible" name="image-map">
                     <area
@@ -223,7 +237,7 @@ export default function Home() {
                       target="_blank"
                       alt="west bengal"
                       title="west bengal"
-                      href="https://vercel.com/bhasmasurs-projects"
+                      href="https://www.algaestore.in"
                       coords="221,220,9"
                       shape="circle"
                     />
@@ -231,7 +245,7 @@ export default function Home() {
                       target="_blank"
                       alt="kerela"
                       title="kerela"
-                      href="https://vercel.com/bhasmasurs-projects"
+                      href="https://www.algaestore.in"
                       coords="156,323,9"
                       shape="circle"
                     />
@@ -239,7 +253,7 @@ export default function Home() {
                       target="_blank"
                       alt="karnataka"
                       title="karnataka"
-                      href="https://vercel.com/bhasmasurs-projects"
+                      href="https://www.algaestore.in"
                       coords="96,266,10"
                       shape="circle"
                     />
@@ -247,7 +261,7 @@ export default function Home() {
                       target="_blank"
                       alt="maharastra"
                       title="maharastra"
-                      href="https://vercel.com/bhasmasurs-projects"
+                      href="https://www.algaestore.in"
                       coords="86,237,12"
                       shape="circle"
                     />
@@ -255,7 +269,7 @@ export default function Home() {
                       target="_blank"
                       alt="gujarat"
                       title="gujarat"
-                      href="https://vercel.com/bhasmasurs-projects"
+                      href="https://www.algaestore.in"
                       coords="57,206,9"
                       shape="circle"
                     />
@@ -263,7 +277,7 @@ export default function Home() {
                 </div>
                 <div className="p-10">
                   <div>
-                    <img src="/Group2.png" />
+                    <img src="/Group_1.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
                       Supporting Local Communities:{" "}
                       <span className="font-[300]">
@@ -273,7 +287,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-10">
-                    <img src="/Group2.png" />
+                    <img src="/Group_2.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
                       Meeting industry benchmarks:{" "}
                       <span className="font-[300]">
@@ -284,7 +298,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-10">
-                    <img src="/Vector.png" />
+                    <img src="/Vector_1.png" />
                     <div className="text-[14px] font-[600] text-[#343434] mt-5">
                       Tapping global markets:{" "}
                       <span className="font-[300]">
@@ -464,10 +478,10 @@ export default function Home() {
             </section>
             <section
               id="footer"
-              className="grid grid-cols-3 md:grid-cols-4 justify-between pt-10 pb-20 gap-0 bg-[#E2F949]"
+              className="grid grid-cols-1 md:grid-cols-4 justify-between pt-10 pb-20 gap-0 bg-[#E2F949]"
             >
               <div className="items-center justify-center">
-                <div className="mt-10 p-1 md:p-0 text-[16px] md:text-[20px] md:text-[20px] font-[700] text-[#252525] flex items-center justify-center">
+                <div className="mt-10 p-1 md:p-0 text-[20px] md:text-[20px] md:text-[20px] font-[700] text-[#252525] flex items-center justify-center">
                   The Algae Store
                 </div>
               </div>
@@ -510,17 +524,26 @@ export default function Home() {
                   Enquire Here
                 </div>
               </div>
-              <div>
-                <div className="mt-10 text-[24.88px] font-[500] text-[#252525] flex items-center">
+              <hr class="w-72 h-0.5 mx-auto my-10 border-0 bg-[#BFDA10] md:hidden"></hr>
+              <div className="hidden md:block mt-10 items-center justify-center">
+                <div className="text-[24.88px] font-[500] text-[#252525] flex items-center justify-center">
                   Contact
                 </div>
-                <div className="mt-2 text-[16px] font-[400] text-[#252525] flex items-center">
-                  Nasik
+                <div className="mt-4 text-[16px] font-[400] text-[#252525] flex items-center justify-center">
+                  Nasik, Maharashtra, India
                 </div>
-                <div className="mt-2 text-[16px] font-[400] text-[#252525] flex items-center">
-                  Maharashtra, India
+                <div className="mt-2 text-[16px] font-[400] text-[#252525] flex items-center justify-center">
+                  +91-7741933777
                 </div>
-                <div className="mt-2 text-[16px] font-[400] text-[#252525] flex items-center">
+              </div>
+              <div className="md:hidden items-center justify-center">
+                <div className="text-[24.88px] font-[500] text-[#252525] flex items-center justify-center">
+                  Contact
+                </div>
+                <div className="mt-4 text-[16px] font-[400] text-[#252525] flex items-center justify-center">
+                  Nasik, Maharashtra, India
+                </div>
+                <div className="mt-2 text-[16px] font-[400] text-[#252525] flex items-center justify-center">
                   +91-7741933777
                 </div>
               </div>
